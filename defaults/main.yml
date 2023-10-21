@@ -7,7 +7,7 @@ utilities__monitoring_packages:
   - { package: ncdu, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
   - { package: iftop, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
   - { package: iotop, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
-  - { package: iotop-c, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: iotop-c, versions: [ '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
   - { package: dstat, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
   - { package: nmon, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
   - { package: multitail, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
