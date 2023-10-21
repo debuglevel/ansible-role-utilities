@@ -37,6 +37,16 @@ MIT -->
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed). -->
 
+Using
+-----
+
+```
+roles:
+  - name: debuglevel.utilities
+    src: https://github.com/dfarrell07/ansible-opendaylight
+    version: <commit hash>
+```
+
 Linting and Testing
 -------------------
 
