@@ -1,1 +1,53 @@
 ---
+utilities__monitoring_packages:
+  - { package: htop, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: btop, versions: [ '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: glances, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: ctop, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: ncdu, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: iftop, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: iotop, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: iotop-c, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: dstat, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: nmon, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: multitail, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: pydf, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+
+utilities__network_packages:
+  - { package: net-tools, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: wget, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: curl, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: aria2, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: netcat, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: nmap, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: ntpdate, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: mtr, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: mosh, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: dnsutils, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+  - { package: apt-transport-https, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64', 'arm64' ] }
+
+utilities__security_packages:
+  - { package: chkrootkit, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+
+utilities__compression_packages:
+  - { package: zip, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: unzip, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: pigz, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: pbzip2, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: p7zip-full, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: xz-utils, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: zstd, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: dtrx, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+
+utilities__misc_packages:
+  - { package: nano, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: mc, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: tmux, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  # - { package: screen, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: pv, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: renameutils, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: locate, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: aptitude, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: reptyr, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: secure-delete, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }
+  - { package: git, versions: [ '16.04', '22.04' ], architecures: [ 'x86_64' ] }

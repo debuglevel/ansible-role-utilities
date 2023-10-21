@@ -1,1 +1,74 @@
 ---
+- name: Show distribution version and architecture
+  ansible.builtin.debug:
+    msg: "ansible_distribution_version={{ ansible_distribution_version }} ansible_architecture={{ ansible_architecture }}"
+
+- name: Ensure monitoring utilities
+  become: true
+  ansible.builtin.apt:
+    state: present
+    update_cache: true
+    cache_valid_time: 3600  # Do not update if already done in the last hour.
+    pkg:
+      - "{{ item.package }}"
+  when:
+    - ansible_distribution_version in item.versions
+    - ansible_architecture in item.architecures
+  loop:
+    "{{ utilities__monitoring_packages }}"
+
+- name: Ensure networking utilities
+  become: true
+  ansible.builtin.apt:
+    state: present
+    update_cache: true
+    cache_valid_time: 3600  # Do not update if already done in the last hour.
+    pkg:
+      - "{{ item.package }}"
+  when:
+    - ansible_distribution_version in item.versions
+    - ansible_architecture in item.architecures
+  loop:
+    "{{ utilities__network_packages }}"
+
+- name: Ensure security utilities
+  become: true
+  ansible.builtin.apt:
+    state: present
+    update_cache: true
+    cache_valid_time: 3600  # Do not update if already done in the last hour.
+    pkg:
+      - "{{ item.package }}"
+  when:
+    - ansible_distribution_version in item.versions
+    - ansible_architecture in item.architecures
+  loop:
+    "{{ utilities__security_packages }}"
+
+- name: Ensure compression utilities
+  become: true
+  ansible.builtin.apt:
+    state: present
+    update_cache: true
+    cache_valid_time: 3600  # Do not update if already done in the last hour.
+    pkg:
+      - "{{ item.package }}"
+  when:
+    - ansible_distribution_version in item.versions
+    - ansible_architecture in item.architecures
+  loop:
+    "{{ utilities__compression_packages }}"
+
+- name: Ensure misc utilities
+  become: true
+  ansible.builtin.apt:
+    state: present
+    update_cache: true
+    cache_valid_time: 3600  # Do not update if already done in the last hour.
+    pkg:
+      - "{{ item.package }}"
+  when:
+    - ansible_distribution_version in item.versions
+    - ansible_architecture in item.architecures
+  loop:
+    "{{ utilities__misc_packages }}"
